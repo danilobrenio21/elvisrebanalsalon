@@ -38,9 +38,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .gold-border {
-            border-color: #D4AF37;
-        }
         .wood-pattern {
             background-color: #1A1A1A;
             background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
@@ -60,10 +57,10 @@
     <!-- Navigation Header -->
     <header class="sticky top-0 z-50 bg-salon-dark/95 backdrop-blur-md border-b border-salon-gold/20 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
+            <!-- Brand Logo Using IMG_0162.jpeg -->
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-11 h-11 rounded-full border-2 border-salon-gold flex items-center justify-center bg-salon-wood group-hover:scale-105 transition-transform">
-                    <span class="font-serif font-bold text-salon-gold text-lg">ER</span>
+                <div class="w-12 h-12 rounded-full border-2 border-salon-gold overflow-hidden shadow-md group-hover:scale-105 transition-transform">
+                    <img src="images/IMG_0162.jpeg" alt="Elvis Rebanal Logo" class="w-full h-full object-cover">
                 </div>
                 <div class="flex flex-col">
                     <span class="font-serif font-bold text-lg text-white tracking-wide">ELVIS REBANAL</span>
@@ -104,16 +101,14 @@
         </div>
     </header>
 
-    <!-- Hero Section (Using hero-cover.jpeg in Black & White with Dark Luxury Overlay) -->
+    <!-- Hero Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center bg-salon-dark overflow-hidden py-20">
-        <!-- Background Image with Grayscale & Contrast Filters -->
         <div class="absolute inset-0 z-0">
-            <img src="images/hero-cover.jpeg" alt="Elvis Rebanal Salon Interior" class="w-full h-full object-cover filter grayscale contrast-125 brightness-40 transform scale-105 animate-pulse duration-1000">
+            <img src="images/hero-cover.jpeg" alt="Elvis Rebanal Salon Interior" class="w-full h-full object-cover filter grayscale contrast-125 brightness-40 transform scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-salon-dark/70 to-transparent"></div>
         </div>
 
         <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-            <!-- Badge -->
             <div class="inline-flex items-center space-x-2 bg-salon-wood/80 border border-salon-gold/40 px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm shadow-xl">
                 <i class="fa-solid fa-crown text-salon-gold text-xs"></i>
                 <span class="text-xs uppercase tracking-[0.2em] text-salon-gold font-semibold">Hard Work Fashion To Haircolor</span>
@@ -136,7 +131,6 @@
                 </a>
             </div>
 
-            <!-- Trust Bar -->
             <div class="mt-16 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-6 text-salon-cream/80 text-sm">
                 <div class="flex items-center justify-center space-x-2">
                     <i class="fa-solid fa-star text-salon-gold text-lg"></i>
@@ -154,7 +148,7 @@
         </div>
     </section>
 
-    <!-- Masterpiece Gallery Section (Using All Uploaded Photos) -->
+    <!-- Masterpiece Gallery Section (Excluding IMG_0162.jpeg) -->
     <section id="gallery" class="py-24 wood-pattern text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -165,17 +159,6 @@
 
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
-                    <img src="images/IMG_0162.jpeg" alt="Balayage Transformation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <span class="text-xs text-salon-gold uppercase font-semibold tracking-widest">Masterpiece</span>
-                        <h3 class="font-serif text-xl font-bold text-white mt-1">Dimensional Balayage & Styling</h3>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 2 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0166.jpeg" alt="Color & Highlights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -185,7 +168,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 3 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0167.jpeg" alt="Salon Masterpiece" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -195,7 +177,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 4 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0168.jpeg" alt="Master Elvis Creation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -205,7 +186,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 5 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0169.jpeg" alt="Client Transformation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -215,7 +195,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 6 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0170.jpeg" alt="Color Correction" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -225,7 +204,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 7 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0171.jpeg" alt="Highlight Artistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -235,7 +213,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 8 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0172.jpeg" alt="Salon Client Look" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
@@ -245,13 +222,21 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 9 -->
                 <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
                     <img src="images/IMG_0173.jpeg" alt="Elvis Rebanal Salon Result" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <span class="text-xs text-salon-gold uppercase font-semibold tracking-widest">Exclusive</span>
                         <h3 class="font-serif text-xl font-bold text-white mt-1">Premium Salon Results</h3>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl bg-salon-card border border-salon-gold/20 shadow-xl aspect-[4/5]">
+                    <img src="images/IMG_0175.jpeg" alt="Masterpiece Look" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-salon-dark via-transparent to-transparent opacity-80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <span class="text-xs text-salon-gold uppercase font-semibold tracking-widest">Masterpiece</span>
+                        <h3 class="font-serif text-xl font-bold text-white mt-1">Immaculate Styling</h3>
                     </div>
                 </div>
             </div>
@@ -268,7 +253,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Hair Coloring Category -->
                 <div class="bg-salon-cream p-8 rounded-2xl border border-salon-gold/30 shadow-md">
                     <div class="flex items-center space-x-3 mb-6">
                         <div class="w-10 h-10 rounded-full bg-salon-wood text-salon-gold flex items-center justify-center font-bold">
@@ -308,7 +292,6 @@
                     </ul>
                 </div>
 
-                <!-- Hair Treatments & Cuts Category -->
                 <div class="bg-salon-cream p-8 rounded-2xl border border-salon-gold/30 shadow-md">
                     <div class="flex items-center space-x-3 mb-6">
                         <div class="w-10 h-10 rounded-full bg-salon-wood text-salon-gold flex items-center justify-center font-bold">
@@ -450,7 +433,6 @@
     <section id="booking" class="py-24 bg-white text-salon-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Booking Form -->
                 <div class="bg-salon-cream p-8 sm:p-10 rounded-2xl border border-salon-gold/30 shadow-xl">
                     <span class="text-salon-wood uppercase tracking-[0.25em] text-xs font-bold block mb-2">Secure Your Slot</span>
                     <h2 class="font-serif text-3xl font-bold tracking-tight mb-6">Interactive Appointment Booking</h2>
@@ -502,7 +484,6 @@
                     </form>
                 </div>
 
-                <!-- Location & Hours Info -->
                 <div id="location" class="flex flex-col justify-between space-y-8">
                     <div class="bg-salon-dark text-white p-8 sm:p-10 rounded-2xl border border-salon-gold/30 shadow-xl">
                         <span class="text-salon-gold uppercase tracking-[0.25em] text-xs font-bold block mb-2">Visit Our Sanctuary</span>
@@ -543,7 +524,6 @@
                         </div>
                     </div>
 
-                    <!-- Map Embed Placeholder -->
                     <div class="rounded-2xl overflow-hidden border border-salon-gold/30 h-64 shadow-xl">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.29749372138!2d121.0189!3d14.6589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM5JzMyLjAiTiAxMjHCsDAxJzA4LjAiRQ!5e0!3m2!1sen!2sph!4v1650000000000!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
@@ -556,8 +536,8 @@
     <footer class="bg-salon-dark text-salon-gray py-12 border-t border-salon-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
             <div class="flex items-center space-x-3">
-                <div class="w-8 h-8 rounded-full border border-salon-gold flex items-center justify-center bg-salon-wood">
-                    <span class="font-serif font-bold text-salon-gold text-xs">ER</span>
+                <div class="w-9 h-9 rounded-full border border-salon-gold overflow-hidden">
+                    <img src="images/IMG_0162.jpeg" alt="Elvis Rebanal Logo" class="w-full h-full object-cover">
                 </div>
                 <span class="font-serif text-white font-semibold">Elvis Rebanal Salon</span>
             </div>
@@ -571,14 +551,12 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close mobile menu on link click
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -586,7 +564,6 @@
             });
         });
 
-        // Booking Form Simulation
         const bookingForm = document.getElementById('booking-form');
         const successAlert = document.getElementById('success-alert');
 
