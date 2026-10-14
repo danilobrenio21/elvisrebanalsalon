@@ -328,7 +328,7 @@
         </div>
     </section>
 
-    <!-- About Master Elvis Section (Using elvis-rebanal.jpeg) -->
+    <!-- About Master Elvis Section -->
     <section id="about" class="py-24 bg-salon-dark text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -528,7 +528,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with Real Social Media Links -->
     <footer class="bg-salon-dark text-salon-gray py-12 border-t border-salon-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
             <div class="flex items-center space-x-3">
@@ -538,15 +538,56 @@
                 <span class="font-serif text-white font-semibold">Elvis Rebanal Salon</span>
             </div>
             <p class="text-xs">&copy; 2026 Elvis Rebanal Salon & Color Expert. All rights reserved.</p>
-            <div class="flex space-x-4 text-salon-gold text-lg">
-                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+            <div class="flex space-x-5 text-salon-gold text-lg">
+                <a href="https://www.facebook.com/share/1FSGEVk9pM/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/elvisrebanalsalon?xtok=MXB2Znl3d21pamRtMA%3D%3D" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@elvisrebanalsalon?_r=1&_t=ZS-9AYhz5O7vBU" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://m.youtube.com/@elvisrebanalsalon932/videos?ra=m" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Floating Messenger Widget -->
+    <a href="https://www.facebook.com/share/1FSGEVk9pM/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#0084FF] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300" title="Chat on Messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-salon-dark/95 border-t border-salon-gold/30 p-4 sm:p-6 backdrop-blur-md transition-transform duration-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-salon-cream text-sm">
+            <p class="text-center sm:text-left">We use cookies to ensure you get the best experience on our website and to analyze traffic. By continuing, you agree to our privacy policy.</p>
+            <div class="flex items-center space-x-3 shrink-0">
+                <button id="cookie-decline" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-2 rounded-full transition-colors text-xs">Decline</button>
+                <button id="cookie-accept" class="bg-salon-gold hover:bg-salon-gold-light text-salon-dark font-bold px-6 py-2 rounded-full transition-colors text-xs">Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Promo Pop-up Modal (15% Discount) -->
+    <div id="promo-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4">
+        <div class="bg-salon-dark border-2 border-salon-gold/50 rounded-2xl p-8 max-w-md w-full relative text-white shadow-2xl text-center">
+            <button id="close-modal" class="absolute top-4 right-4 text-salon-gray hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="w-12 h-12 rounded-full bg-salon-gold/20 text-salon-gold flex items-center justify-center mx-auto mb-4 text-xl">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <span class="text-xs uppercase tracking-[0.25em] text-salon-gold font-bold block mb-2">Exclusive Offer</span>
+            <h3 class="font-serif text-3xl font-bold mb-3">Get 15% Off Your Next Visit</h3>
+            <p class="text-salon-cream/80 text-sm mb-6">Subscribe to our promotional newsletter to receive your 15% discount voucher and updates on 2027 booking slots!</p>
+            
+            <form id="promo-form" class="space-y-3">
+                <input type="email" required placeholder="Enter your email address" class="w-full bg-salon-card border border-salon-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-salon-gold">
+                <button type="submit" class="w-full bg-salon-gold hover:bg-salon-gold-light text-salon-dark font-bold py-3 rounded-xl transition-colors text-sm">
+                    Claim 15% Discount
+                </button>
+            </form>
+            <p id="promo-success" class="hidden text-green-400 text-xs mt-3 font-medium">🎉 Success! Check your email for your 15% discount voucher.</p>
+        </div>
+    </div>
+
     <script>
+        // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
@@ -560,6 +601,7 @@
             });
         });
 
+        // Booking Form Submission
         const bookingForm = document.getElementById('booking-form');
         const successAlert = document.getElementById('success-alert');
 
@@ -568,6 +610,38 @@
             successAlert.classList.remove('hidden');
             bookingForm.reset();
             successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        // Cookie Banner Logic
+        const cookieBanner = document.getElementById('cookie-banner');
+        document.getElementById('cookie-accept').addEventListener('click', () => {
+            cookieBanner.style.transform = 'translateY(100%)';
+            setTimeout(() => cookieBanner.remove(), 500);
+        });
+        document.getElementById('cookie-decline').addEventListener('click', () => {
+            cookieBanner.style.transform = 'translateY(100%)';
+            setTimeout(() => cookieBanner.remove(), 500);
+        });
+
+        // Email Promo Modal Logic (Pop up after 3 seconds)
+        const promoModal = document.getElementById('promo-modal');
+        setTimeout(() => {
+            promoModal.classList.remove('hidden');
+        }, 3000);
+
+        document.getElementById('close-modal').addEventListener('click', () => {
+            promoModal.classList.add('hidden');
+        });
+
+        const promoForm = document.getElementById('promo-form');
+        const promoSuccess = document.getElementById('promo-success');
+        promoForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            promoSuccess.classList.remove('hidden');
+            promoForm.reset();
+            setTimeout(() => {
+                promoModal.classList.add('hidden');
+            }, 2500);
         });
     </script>
 </body>
